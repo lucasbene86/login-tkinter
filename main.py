@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter.font import Font
 
 
 janela = Tk()
@@ -11,14 +10,26 @@ janela.resizable(0, 0)  # JANELA TRAVADA.
 janela.config(background="#EEEEEE") # cor de fundo
 
 
+# -Estilos-
+# Texto Label
+cor_letra = '#FFFFFF'
+cor_fundo = '#0085FF'
+fonte = ''
+
+
+# -Label-
 # NOME USER
-login_texto = Label(janela, text='Usuario:', bg='#0085FF', fg='#FFFFFF')
+login_texto = Label(
+    janela, text='Usuário:', bg=f'{cor_fundo}', fg=f'{cor_letra}')
 login_texto.place(x=130, y=225)
 
 # SENHA
-senha_texto = Label(janela, text='Senha:')
+senha_texto = Label(
+    janela, text='Senha:', bg=f'{cor_fundo}', fg=f'{cor_letra}')
 senha_texto.place(x=130, y=250)
 
+
+# -Entry-
 # USUARIO
 user = Entry(janela)
 user.place(x=190, y=225)
