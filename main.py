@@ -12,9 +12,9 @@ janela.config(background="#EEEEEE") # cor de fundo
 
 # -Estilos-
 # Texto Label
-cor_letra = '#FFFFFF'
-cor_fundo = '#0085FF'
-fonte = ''
+cor_letra = '#000'
+cor_fundo = '#EEEEEE'
+fonte = 'Calibri'
 
 
 # -Label-
@@ -25,7 +25,7 @@ login_texto = Label(
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
     font=f'{fonte}')
-login_texto.place(x=130, y=225)
+login_texto.place(x=126, y=220)
 
 # SENHA
 senha_texto = Label(
@@ -34,7 +34,7 @@ senha_texto = Label(
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
     font=f'{fonte}')
-senha_texto.place(x=130, y=250)
+senha_texto.place(x=126, y=245)
 
 
 # -Entry-
@@ -47,7 +47,10 @@ senha = Entry(janela, show='*')
 senha.place(x=190, y=250)
 
 
-
+# -Button-
+# ENTRAR
+entrar = Button(janela, text='Entrar')
+entrar.place(x=270, y=280)
 
 
 
