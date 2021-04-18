@@ -20,12 +20,20 @@ fonte = ''
 # -Label-
 # NOME USER
 login_texto = Label(
-    janela, text='Usuário:', bg=f'{cor_fundo}', fg=f'{cor_letra}')
+    janela,
+    text='Usuário:',
+    bg=f'{cor_fundo}',
+    fg=f'{cor_letra}',
+    font=f'{fonte}')
 login_texto.place(x=130, y=225)
 
 # SENHA
 senha_texto = Label(
-    janela, text='Senha:', bg=f'{cor_fundo}', fg=f'{cor_letra}')
+    janela,
+    text='Senha:',
+    bg=f'{cor_fundo}',
+    fg=f'{cor_letra}',
+    font=f'{fonte}')
 senha_texto.place(x=130, y=250)
 
 
