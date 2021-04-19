@@ -3,7 +3,7 @@ from tkinter import *
 
 janela = Tk()
 janela.title('Login')  # Titulo da janela.
-janela.geometry('500x600+400+50')  # Dimensão da janela e onde ela "Nasce".
+janela.geometry('350x450+400+50')  # Dimensão da janela e onde ela "Nasce".
 # janela.iconbitmap('icons/icon_janela/icone.ico')
 janela.resizable(0, 0)  # JANELA TRAVADA.
 # janela.state('zoomed')  # O programa já abre em tela cheia
@@ -25,7 +25,7 @@ login_texto = Label(
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
     font=f'{fonte}')
-login_texto.place(x=126, y=220)
+login_texto.place(x=65, y=150)
 
 # SENHA
 senha_texto = Label(
@@ -34,24 +34,24 @@ senha_texto = Label(
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
     font=f'{fonte}')
-senha_texto.place(x=126, y=245)
+senha_texto.place(x=65, y=180)
 
 
 # -Entry-
 # USUARIO
 user = Entry(janela)
-user.place(x=190, y=225)
+user.place(x=130, y=154)
 
 # SENHA
 senha = Entry(janela, show='*')
-senha.place(x=190, y=250)
+senha.place(x=130, y=184)
 
 
 # -Button-
 # ENTRAR
 entrar_icone = PhotoImage(file='icons/entrar.png')
 entrar = Button(janela, image=entrar_icone, text='Entrar')
-entrar.place(x=270, y=280)
+entrar.place(x=220, y=210)
 
 
 
