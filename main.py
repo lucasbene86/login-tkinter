@@ -27,7 +27,7 @@ login_texto = Label(
     fg=f'{cor_letra}',
     font=f'{fonte}',
     image=login_icone)
-login_texto.place(x=65, y=150)
+login_texto.place(x=90, y=150)
 
 # SENHA
 senha_icone = PhotoImage(file='icons/senha.png')
@@ -38,7 +38,7 @@ senha_texto = Label(
     fg=f'{cor_letra}',
     font=f'{fonte}',
     image=senha_icone)
-senha_texto.place(x=65, y=180)
+senha_texto.place(x=78, y=180)
 
 
 # -Entry-
