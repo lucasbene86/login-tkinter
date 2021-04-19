@@ -19,12 +19,14 @@ fonte = 'Calibri'
 
 # -Label-
 # NOME USER
+login_icone = PhotoImage(file='icons/user.png')
 login_texto = Label(
     janela,
     text='Usuário:',
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
-    font=f'{fonte}')
+    font=f'{fonte}',
+    image=login_icone)
 login_texto.place(x=65, y=150)
 
 # SENHA
@@ -42,6 +44,7 @@ senha_texto.place(x=65, y=180)
 # -Entry-
 # USUARIO
 user = Entry(janela)
+user.insert(0, 'login')
 user.place(x=130, y=154)
 
 # SENHA
