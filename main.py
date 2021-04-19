@@ -28,12 +28,14 @@ login_texto = Label(
 login_texto.place(x=65, y=150)
 
 # SENHA
+senha_icone = PhotoImage(file='icons/senha.png')
 senha_texto = Label(
     janela,
     text='Senha:',
     bg=f'{cor_fundo}',
     fg=f'{cor_letra}',
-    font=f'{fonte}')
+    font=f'{fonte}',
+    image=senha_icone)
 senha_texto.place(x=65, y=180)
 
 
