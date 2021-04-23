@@ -59,5 +59,9 @@ entrar = Button(janela, image=entrar_icone, text='Entrar')
 entrar.place(x=220, y=210)
 
 
+# BEM-VINDO
+bem_vindo = Label(janela, text='BEM-VINDO', font='Calibri 20')
+bem_vindo.place(x=110, y=300)
+
 
 janela.mainloop()
