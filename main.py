@@ -7,13 +7,20 @@ janela.geometry('350x450+400+50')  # Dimensão da janela e onde ela "Nasce".
 # janela.iconbitmap('icons/icon_janela/icone.ico')
 janela.resizable(0, 0)  # JANELA TRAVADA.
 # janela.state('zoomed')  # O programa já abre em tela cheia
-janela.config(background="#EEEEEE") # cor de fundo
+janela.config(background="#1079a8") # cor de fundo
+
+
+janela.wm_attributes('-transparentcolor', '#EEEEEE')
+
+# FUNDO
+fundo_noite = PhotoImage(file='icons/bg/noite.png')
+Label(janela, image=fundo_noite).place(relheight=1, relwidth=1)
 
 
 # -Estilos-
 # Texto Label
 cor_letra = '#000'
-cor_fundo = '#EEEEEE'
+cor_fundo = '#1079a8'
 fonte = 'Calibri'
 
 
@@ -60,7 +67,7 @@ entrar.place(x=220, y=210)
 
 
 # BEM-VINDO
-bem_vindo = Label(janela, text='BEM-VINDO', font='Calibri 20')
+bem_vindo = Label(janela, text='BEM-VINDO', font='Calibri 20', bg='#18a7da', fg='#ffffff')
 bem_vindo.place(x=110, y=300)
 
 
