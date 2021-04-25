@@ -16,11 +16,11 @@ janela.resizable(0, 0)  # JANELA TRAVADA.
 frame = Frame(janela)
 frame.place(x=0, y=0, relwidth=1, relheight=1)
 
-canvas = Canvas(frame, bg="#EEEEEE", width=350, height=450)
-canvas.place(relheight=1, relwidth=1)
+canvas = Canvas(frame, bg="#000", width=350, height=450, relief=RAISED)
+canvas.place(x=-2, y=0)
 
 fundo_noite = PhotoImage(file='icons/bg/noite.png')
-canvas.create_image(173,224,image=fundo_noite)
+canvas.create_image(175,224,image=fundo_noite)
 
 
 # -Estilos-
