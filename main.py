@@ -52,8 +52,8 @@ senha.place(x=130, y=184)
 # -Button-
 # ENTRAR
 entrar_icone = PhotoImage(file='icons/entrar.png')
-entrar = Button(janela, image=entrar_icone, text='Entrar')
-entrar.place(x=220, y=210)
+entrar = Button(janela, image=entrar_icone, bd=1, relief=FLAT)
+entrar.place(x=155, y=220)
 
 
 # BEM-VINDO
