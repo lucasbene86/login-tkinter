@@ -59,7 +59,7 @@ entrar.place(x=220, y=210)
 
 # BEM-VINDO
 canvas.create_text(
-    180,320,fill="#FFFFFF",font="Arial 20 bold", text="BEM-VINDO")
+    180,320,fill="#FFFFFF",font="Trevor 20", text="BEM-VINDO")
 
 
 janela.mainloop()
