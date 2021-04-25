@@ -1,5 +1,4 @@
 from tkinter import *
-#from PIL import Image
 
 
 janela = Tk()
@@ -32,11 +31,11 @@ fonte = 'Calibri'
 
 # NOME USER
 login_icone = PhotoImage(file='icons/user.png')
-canvas.create_image(105,162,image=login_icone)
+canvas.create_image(111,161,image=login_icone)
 
 # SENHA
 senha_icone = PhotoImage(file='icons/senha.png')
-canvas.create_image(100,193,image=senha_icone)
+canvas.create_image(110,192,image=senha_icone)
 
 
 # -Entry-
@@ -59,7 +58,7 @@ entrar.place(x=220, y=210)
 
 # BEM-VINDO
 canvas.create_text(
-    180,320,fill="#FFFFFF",font="Trevor 20", text="BEM-VINDO")
+    180,320,fill="#f2f2f2",font="Trevor 20", text="BEM-VINDO")
 
 
 janela.mainloop()
