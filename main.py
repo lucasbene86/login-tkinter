@@ -1,4 +1,5 @@
 from tkinter import *
+#from PIL import Image
 
 
 janela = Tk()
@@ -7,45 +8,35 @@ janela.geometry('350x450+400+50')  # Dimensão da janela e onde ela "Nasce".
 # janela.iconbitmap('icons/icon_janela/icone.ico')
 janela.resizable(0, 0)  # JANELA TRAVADA.
 # janela.state('zoomed')  # O programa já abre em tela cheia
-janela.config(background="#1079a8") # cor de fundo
+#janela.config(background="#000") # cor de fundo
 
 
-janela.wm_attributes('-transparentcolor', '#EEEEEE')
+# FUNDO COM CANVAS
+#Label(janela, image=fundo_noite).place(relheight=1, relwidth=1)
+frame = Frame(janela)
+frame.place(x=0, y=0, relwidth=1, relheight=1)
 
-# FUNDO
+canvas = Canvas(frame, bg="#EEEEEE", width=350, height=450)
+canvas.place(relheight=1, relwidth=1)
+
 fundo_noite = PhotoImage(file='icons/bg/noite.png')
-Label(janela, image=fundo_noite).place(relheight=1, relwidth=1)
+canvas.create_image(173,224,image=fundo_noite)
 
 
 # -Estilos-
 # Texto Label
 cor_letra = '#000'
-cor_fundo = '#1079a8'
+cor_fundo = '#EEEEEE'
 fonte = 'Calibri'
 
 
-# -Label-
 # NOME USER
 login_icone = PhotoImage(file='icons/user.png')
-login_texto = Label(
-    janela,
-    text='Usuário:',
-    bg=f'{cor_fundo}',
-    fg=f'{cor_letra}',
-    font=f'{fonte}',
-    image=login_icone)
-login_texto.place(x=90, y=150)
+canvas.create_image(105,162,image=login_icone)
 
 # SENHA
 senha_icone = PhotoImage(file='icons/senha.png')
-senha_texto = Label(
-    janela,
-    text='Senha:',
-    bg=f'{cor_fundo}',
-    fg=f'{cor_letra}',
-    font=f'{fonte}',
-    image=senha_icone)
-senha_texto.place(x=78, y=180)
+canvas.create_image(100,193,image=senha_icone)
 
 
 # -Entry-
@@ -67,8 +58,8 @@ entrar.place(x=220, y=210)
 
 
 # BEM-VINDO
-bem_vindo = Label(janela, text='BEM-VINDO', font='Calibri 20', bg='#18a7da', fg='#ffffff')
-bem_vindo.place(x=110, y=300)
+canvas.create_text(
+    180,320,fill="#FFFFFF",font="Arial 20 bold", text="BEM-VINDO")
 
 
 janela.mainloop()
