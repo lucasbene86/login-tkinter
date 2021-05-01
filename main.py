@@ -31,29 +31,29 @@ fonte = 'Calibri'
 
 # NOME USER
 login_icone = PhotoImage(file='icons/user.png')
-canvas.create_image(111,161,image=login_icone)
+canvas.create_image(100,161,image=login_icone)
 
 # SENHA
 senha_icone = PhotoImage(file='icons/senha.png')
-canvas.create_image(110,192,image=senha_icone)
+canvas.create_image(99,192,image=senha_icone)
 
 
 # -Entry-
 # USUARIO
 user = Entry(janela)
 user.insert(0, 'login')
-user.place(x=130, y=154)
+user.place(x=120, y=154)
 
 # SENHA
 senha = Entry(janela, show='*')
-senha.place(x=130, y=184)
+senha.place(x=120, y=184)
 
 
 # -Button-
 # ENTRAR
 entrar_icone = PhotoImage(file='icons/entrar.png')
 entrar = Button(janela, image=entrar_icone, bd=1, relief=FLAT)
-entrar.place(x=155, y=220)
+entrar.place(x=145, y=220)
 
 
 # BEM-VINDO
