@@ -1,6 +1,13 @@
 from tkinter import *
 
 
+# FUNÇÔES.
+def login():
+    user_dados = user_entry.get()
+    senha_dados = senha_entry.get()
+
+    print(user_dados, senha_dados)
+
 janela = Tk()
 janela.title('Login')  # Titulo da janela.
 janela.geometry('350x450+400+50')  # Dimensão da janela e onde ela "Nasce".
@@ -40,19 +47,19 @@ canvas.create_image(99,192,image=senha_icone)
 
 # -Entry-
 # USUARIO
-user = Entry(janela)
-user.insert(0, 'login')
-user.place(x=120, y=154)
+user_entry = Entry(janela)
+user_entry.insert(0, 'login')
+user_entry.place(x=120, y=154)
 
 # SENHA
-senha = Entry(janela, show='*')
-senha.place(x=120, y=184)
+senha_entry = Entry(janela, show='*')
+senha_entry.place(x=120, y=184)
 
 
 # -Button-
 # ENTRAR
 entrar_icone = PhotoImage(file='icons/entrar.png')
-entrar = Button(janela, image=entrar_icone, bd=1, relief=FLAT)
+entrar = Button(janela, image=entrar_icone, bd=1, relief=FLAT, command=login)
 entrar.place(x=145, y=220)
 
 
